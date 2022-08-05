@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:summit_ias/view/course_selection_page/course_selection_page.dart';
 import 'package:summit_ias/view/splash_screen/splash_screen.dart';
-import 'package:summit_ias/view/splash_screen/splash_screen_two.dart';import 'package:sizer/sizer.dart';
-
+import 'package:summit_ias/view/splash_screen/splash_screen_two.dart';
+import 'package:sizer/sizer.dart';
+import 'package:summit_ias/view/testpaper_single_page/testpaper_single_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -27,14 +29,14 @@ class MyApp extends StatelessWidget {
     return Sizer(
       builder: (context, orientation, deviceType) {
         return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        textTheme: GoogleFonts.robotoFlexTextTheme(),
-        primarySwatch: Colors.blue,
-      ),
-      home: const SplashScreen()
-      );
+            debugShowCheckedModeBanner: false,
+            title: 'Flutter Demo',
+            theme: ThemeData(
+              textTheme: GoogleFonts.robotoFlexTextTheme(),
+              primarySwatch: Colors.blue,
+            ),
+            home: const TestPaperSinglePage());
       },
-     ); }
-      }
+    );
+  }
+}
