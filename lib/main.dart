@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
               textTheme: GoogleFonts.robotoFlexTextTheme(),
               primarySwatch: Colors.blue,
             ),
-            home: const TestPaperSinglePage());
+            home: const SplashScreen());
       },
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:summit_ias/view/testpaper_single_page/testpaper_single_page.dart';
 
 class CourseSelectionPage extends StatelessWidget {
   const CourseSelectionPage({Key? key}) : super(key: key);
@@ -35,29 +36,35 @@ class CourseSelectionPage extends StatelessWidget {
                     ],
                   ),
                   Spacer(),
-                  Container(
-                    height: 35,
-                    width: 35,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: Color.fromRGBO(188, 188, 188, 100)),
-                    child: Center(
-                      child: Stack(
-                        children: [
-                          Icon(
-                            Icons.notifications_none,
-                            color: Colors.white,
-                          ),
-                          Positioned(
-                            child: Icon(
-                              Icons.circle,
-                              size: 5,
-                              color: Color.fromRGBO(255, 0, 0, 100),
+                  GestureDetector(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TestPaperSinglePage())),
+                    child: Container(
+                      height: 35,
+                      width: 35,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Color.fromRGBO(188, 188, 188, 100)),
+                      child: Center(
+                        child: Stack(
+                          children: [
+                            Icon(
+                              Icons.notifications_none,
+                              color: Colors.white,
                             ),
-                            left: 14,
-                            top: 3,
-                          )
-                        ],
+                            Positioned(
+                              child: Icon(
+                                Icons.circle,
+                                size: 5,
+                                color: Color.fromRGBO(255, 0, 0, 100),
+                              ),
+                              left: 14,
+                              top: 3,
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   )
