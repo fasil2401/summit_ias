@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:summit_ias/view/splash_screen/splash_screen_two.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -23,7 +22,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       backgroundColor: const Color(0xFF69BEF8),
       body: Center(
