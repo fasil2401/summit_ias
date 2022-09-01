@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:summit_ias/view/course_selection_page/course_selection_page.dart';
+import 'package:summit_ias/view/notifications_page/notifications_page.dart';
 import 'package:summit_ias/view/splash_screen/splash_screen.dart';
 import 'package:summit_ias/view/splash_screen/splash_screen_two.dart';
 import 'package:sizer/sizer.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
               textTheme: GoogleFonts.robotoFlexTextTheme(),
               primarySwatch: Colors.blue,
             ),
-            home: const SplashScreen());
+            home: const NotificationsPage());
       },
     );
   }
